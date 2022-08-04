@@ -26,7 +26,7 @@ namespace Launcher
                 WebClient wb = new WebClient();
                 string version = wb.DownloadString("https://ghost-storage.7m.pl/ver.txt");
 
-                if (int.Parse(version) > 16) //If the server replies with a int higher than 15 it will stop the launching
+                if (int.Parse(version) > 16) //If the server replies with a int higher than 16 it will stop the launching
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("[Error] Your bootstrapper is outdated, please redownload it.");
@@ -147,11 +147,6 @@ namespace Launcher
                 Console.WriteLine("End of exception");
             }
             
-        }
-        private void newtonfinish(object sender, AsyncCompletedEventArgs e)
-        {
-
-            System.IO.File.Move(Environment.CurrentDirectory + "/bin/NewtonsoftJson.dll", Environment.CurrentDirectory + "/bin/Newtonsoft.Json.dll");
         }
         void Completed()
         {
