@@ -1,1 +1,1 @@
-GHOST bootstrapper source code, now hosted on github
+### DISCONTINUED, moved to https://github.com/TheRealCrazyfuy/GHOST-bootstrapper-v2
